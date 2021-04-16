@@ -23,8 +23,11 @@ def rotacion():
     for i in res:
         print(i)
     '''
-    
+    print("\n\n------LLENADO DE VECTORES------")
+    for i in range(len(P)):
+        P[i] = int(input("Digite el valor {} del punto P: ".format(i)))
 
+    
 
 def traslacion():    
     print("Digite los valores del punto P")
