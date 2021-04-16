@@ -17,6 +17,12 @@ res = np.array([[0,0,0,0],
 def rotacion():
     pass
 
+
+
+
+
+
+
 def traslacion():    
         # MOSTRAR MATRIZ
     for i in range(len(mat)): # Filas
