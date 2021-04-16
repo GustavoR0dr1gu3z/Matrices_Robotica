@@ -14,15 +14,27 @@ res = np.array([[0,0,0,0],
                 [0,0,0,0],
                 [0,0,0,0]])
 
+
+def tx():
+    print("TZ")
+def ty():
+    print("TZ")
+def tz():
+    print("TZ")
+
+
 def rotacion():
-    pass
-
-
-
-
-
-
-
+    sentido = input("Eje en que rotará (X, Y, Z): ")
+    if(sentido == 'X' or sentido == 'x'):
+        tx()
+    elif(sentido == 'Y' or sentido == 'y'):
+        ty()
+    elif(sentido == 'Z' or sentido == 'z'):
+        tz()
+    else:
+        print("DIGITO INCORRECTO")  
+        
+        
 def traslacion():    
         # MOSTRAR MATRIZ
     for i in range(len(mat)): # Filas
