@@ -16,9 +16,9 @@ res = np.array([[0,0,0,0],
 
 
 def tx():
-    print("TZ")
+    print("TX")
 def ty():
-    print("TZ")
+    print("TY")
 def tz():
     print("TZ")
 
