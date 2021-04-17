@@ -22,10 +22,10 @@ def tx():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[1][1] = round(np.cos(grados))
-    mat[1][2] = round(-np.sin(grados))
-    mat[2][1] = round(np.sin(grados))
-    mat[2][2] = round(np.cos(grados))
+    mat[1][1] = (np.cos(grados))
+    mat[1][2] = (-np.sin(grados))
+    mat[2][1] = (np.sin(grados))
+    mat[2][2] = (np.cos(grados))
     
     print("\n\n------MOSTRANDO MATRIZ------")
     for i in mat:
@@ -49,10 +49,10 @@ def ty():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[0][0] = round(np.cos(grados))
-    mat[0][2] = round(np.sin(grados))
-    mat[2][0] = round(-np.sin(grados))
-    mat[2][2] = round(np.cos(grados))
+    mat[0][0] = (np.cos(grados))
+    mat[0][2] = (np.sin(grados))
+    mat[2][0] = (-np.sin(grados))
+    mat[2][2] = (np.cos(grados))
     
     print("\n\n------MOSTRANDO MATRIZ------")
     for i in mat:
@@ -76,10 +76,10 @@ def tz():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[0][0] = round(np.cos(grados))
-    mat[0][1] = round(-np.sin(grados))
-    mat[1][0] = round(np.sin(grados))
-    mat[1][1] = round(np.cos(grados))
+    mat[0][0] = (np.cos(grados))
+    mat[0][1] = (-np.sin(grados))
+    mat[1][0] = (np.sin(grados))
+    mat[1][1] = (np.cos(grados))
     
     print("\n\n------MOSTRANDO MATRIZ------")
     for i in mat:
@@ -154,10 +154,10 @@ def rtx():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[1][1] = round(np.cos(grados))
-    mat[1][2] = round(-np.sin(grados))
-    mat[2][1] = round(np.sin(grados))
-    mat[2][2] = round(np.cos(grados))
+    mat[1][1] = (np.cos(grados))
+    mat[1][2] = (-np.sin(grados))
+    mat[2][1] = (np.sin(grados))
+    mat[2][2] = (np.cos(grados))
     mat[0][3] = P[0]
     mat[1][3] = P[1]
     mat[2][3] = P[2]
@@ -188,10 +188,10 @@ def rty():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[0][0] = round(np.cos(grados))
-    mat[0][2] = round(np.sin(grados))
-    mat[2][0] = round(-np.sin(grados))
-    mat[2][2] = round(np.cos(grados))
+    mat[0][0] = (np.cos(grados))
+    mat[0][2] = (np.sin(grados))
+    mat[2][0] = (-np.sin(grados))
+    mat[2][2] = (np.cos(grados))
     mat[0][3] = P[0]
     mat[1][3] = P[1]
     mat[2][3] = P[2]
@@ -222,10 +222,10 @@ def rtz():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[0][0] = round(np.cos(grados))
-    mat[0][1] = round(-np.sin(grados))
-    mat[1][0] = round(np.sin(grados))
-    mat[1][1] = round(np.cos(grados))
+    mat[0][0] = (np.cos(grados))
+    mat[0][1] = (-np.sin(grados))
+    mat[1][0] = (np.sin(grados))
+    mat[1][1] = (np.cos(grados))
     mat[0][3] = P[0]
     mat[1][3] = P[1]
     mat[2][3] = P[2]
@@ -256,13 +256,13 @@ def trx():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[1][1] = round(np.cos(grados))
-    mat[1][2] = round(-np.sin(grados))
-    mat[2][1] = round(np.sin(grados))
-    mat[2][2] = round(np.cos(grados))
+    mat[1][1] = (np.cos(grados))
+    mat[1][2] = (-np.sin(grados))
+    mat[2][1] = (np.sin(grados))
+    mat[2][2] = (np.cos(grados))
     mat[0][3] = P[0]
-    mat[1][3] = (P[1]*round(np.cos(grados)))-(P[2]*round(np.sin(grados)))
-    mat[2][3] = (P[1]*round(np.sin(grados)))+(P[2]*round(np.cos(grados)))
+    mat[1][3] = (P[1]*(np.cos(grados)))-(P[2]*(np.sin(grados)))
+    mat[2][3] = (P[1]*(np.sin(grados)))+(P[2]*(np.cos(grados)))
     
     print("\n\n------MOSTRANDO MATRIZ------")
     for i in mat:
@@ -290,13 +290,13 @@ def tryy():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[0][0] = round(np.cos(grados))
-    mat[0][2] = round(np.sin(grados))
-    mat[2][0] = round(-np.sin(grados))
-    mat[2][2] = round(np.cos(grados))
+    mat[0][0] = (np.cos(grados))
+    mat[0][2] = (np.sin(grados))
+    mat[2][0] = (-np.sin(grados))
+    mat[2][2] = (np.cos(grados))
     mat[0][3] = P[0]
-    mat[1][3] = (P[1]*round(np.cos(grados)))-(P[2]*round(np.sin(grados)))
-    mat[2][3] = (P[1]*round(np.sin(grados)))+(P[2]*round(np.cos(grados)))
+    mat[1][3] = (P[1]*(np.cos(grados)))-(P[2]*(np.sin(grados)))
+    mat[2][3] = (P[1]*(np.sin(grados)))+(P[2]*(np.cos(grados)))
     
     print("\n\n------MOSTRANDO MATRIZ------")
     for i in mat:
@@ -324,13 +324,13 @@ def trz():
     for i in range(len(R)-1):
         R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
-    mat[0][0] = round(np.cos(grados))
-    mat[0][1] = round(-np.sin(grados))
-    mat[1][0] = round(np.sin(grados))
-    mat[1][1] = round(np.cos(grados))
+    mat[0][0] = (np.cos(grados))
+    mat[0][1] = (-np.sin(grados))
+    mat[1][0] = (np.sin(grados))
+    mat[1][1] = (np.cos(grados))
     mat[0][3] = P[0]
-    mat[1][3] = (P[1]*round(np.cos(grados)))-(P[2]*round(np.sin(grados)))
-    mat[2][3] = (P[1]*round(np.sin(grados)))+(P[2]*round(np.cos(grados)))
+    mat[1][3] = (P[1]*(np.cos(grados)))-(P[2]*(np.sin(grados)))
+    mat[2][3] = (P[1]*(np.sin(grados)))+(P[2]*(np.cos(grados)))
     
     print("\n\n------MOSTRANDO MATRIZ------")
     for i in mat:
