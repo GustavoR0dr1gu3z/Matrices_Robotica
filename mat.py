@@ -2,17 +2,17 @@ import numpy as np
 import os
 
 # ASIGNAR MEMORIA PARA LAS MATRICES Y VECTORES
-P = np.array([0,0,0])
-R = np.array([0,0,0,1])
-mat = np.array([[1,0,0,0],
-                [0,1,0,0],
-                [0,0,1,0],
-                [0,0,0,1]])
+P = np.array([0.0,0.0,0.0])
+R = np.array([0.0,0.0,0.0,1.0])
+mat = np.array([[1.0,0.0,0.0,0.0],
+                [0.0,1.0,0.0,0.0],
+                [0.0,0.0,1.0,0.0],
+                [0.0,0.0,0.0,1.0]])
 
-res = np.array([[0,0,0,0],
-                [0,0,0,0],
-                [0,0,0,0],
-                [0,0,0,0]])
+res = np.array([[0.0,0.0,0.0,0.0],
+                [0.0,0.0,0.0,0.0],
+                [0.0,0.0,0.0,0.0],
+                [0.0,0.0,0.0,0.0]])
 
 ######################################################################
 def tx():
@@ -297,7 +297,6 @@ def tryy():
     mat[0][3] = P[0]
     mat[1][3] = (P[1]*round(np.cos(grados)))-(P[2]*round(np.sin(grados)))
     mat[2][3] = (P[1]*round(np.sin(grados)))+(P[2]*round(np.cos(grados)))
-
     
     print("\n\n------MOSTRANDO MATRIZ------")
     for i in mat:
@@ -332,7 +331,6 @@ def trz():
     mat[0][3] = P[0]
     mat[1][3] = (P[1]*round(np.cos(grados)))-(P[2]*round(np.sin(grados)))
     mat[2][3] = (P[1]*round(np.sin(grados)))+(P[2]*round(np.cos(grados)))
-
     
     print("\n\n------MOSTRANDO MATRIZ------")
     for i in mat:
