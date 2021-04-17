@@ -1,6 +1,8 @@
 import numpy as np
 import os
 
+
+
 # ASIGNAR MEMORIA PARA LAS MATRICES Y VECTORES
 P = np.array([0.0,0.0,0.0])
 R = np.array([0.0,0.0,0.0,1.0])
@@ -38,8 +40,7 @@ def tx():
     print("\n\n-----MOSTRANDO RESULTADO-------")
     a = mat.dot(R)
     for i in range(len(a)):
-        print(a[i])        
-        
+        print(a[i])                
     
 ######################################################################    
 def ty():
@@ -66,8 +67,7 @@ def ty():
     a = mat.dot(R)
     for i in range(len(a)):
         print(a[i])
-        
-        
+                
 ######################################################################    
 def tz():
     print("\n\n------GRADOS DEL GIRO------")
@@ -92,8 +92,7 @@ def tz():
     print("\n\n-----MOSTRANDO RESULTADO-------")
     a = mat.dot(R)
     for i in range(len(a)):
-        print(a[i])
-        
+        print(a[i])        
         
 ######################################################################
 def rotacion():
