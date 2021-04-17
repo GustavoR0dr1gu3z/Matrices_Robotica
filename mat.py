@@ -178,13 +178,76 @@ def trx():
     a = mat.dot(R)
     for i in range(len(a)):
         print(a[i])        
-######################################################################            
-    
+        
+######################################################################                
 def tryy():
-    pass
-def trz():
-    pass
+    print("\n\n------GRADOS DEL GIRO------")
+    grados = int(input("Que grados tendrá el giro: "))
+    
+    print("\n\n------LLENADO DE VECTOR P------")
+    for i in range(len(P)):
+        P[i] = float(input("Digite el valor {} del punto P: ".format(i)))
+        
+    print("\n\n------LLENADO DE VECTOR R------")
+    for i in range(len(R)-1):
+        R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
 
+    mat[0][0] = round(np.cos(grados))
+    mat[0][2] = round(np.sin(grados))
+    mat[2][0] = round(-np.sin(grados))
+    mat[2][2] = round(np.cos(grados))
+    mat[0][3] = P[0]
+    mat[1][3] = P[1]
+    mat[2][3] = P[2]
+    
+    print("\n\n------MOSTRANDO MATRIZ------")
+    for i in mat:
+        print(i)
+
+    print("\n\n-----MOSTRANDO VECTOR-------")
+    for i in R:
+        print("["+str(i)+"]")    
+
+    print("\n\n-----MOSTRANDO RESULTADO-------")
+    a = mat.dot(R)
+    for i in range(len(a)):
+        print(a[i])        
+        
+######################################################################        
+def trz():
+    print("\n\n------GRADOS DEL GIRO------")
+    grados = int(input("Que grados tendrá el giro: "))
+    
+    print("\n\n------LLENADO DE VECTOR P------")
+    for i in range(len(P)):
+        P[i] = float(input("Digite el valor {} del punto P: ".format(i)))
+        
+    print("\n\n------LLENADO DE VECTOR R------")
+    for i in range(len(R)-1):
+        R[i] = float(input("Digite el valor {} del punto R: ".format(i)))
+
+    mat[0][0] = round(np.cos(grados))
+    mat[0][1] = round(-np.sin(grados))
+    mat[1][0] = round(np.sin(grados))
+    mat[1][1] = round(np.cos(grados))
+    mat[0][3] = P[0]
+    mat[1][3] = P[1]
+    mat[2][3] = P[2]
+    
+    print("\n\n------MOSTRANDO MATRIZ------")
+    for i in mat:
+        print(i)
+
+    print("\n\n-----MOSTRANDO VECTOR-------")
+    for i in R:
+        print("["+str(i)+"]")    
+
+    print("\n\n-----MOSTRANDO RESULTADO-------")
+    a = mat.dot(R)
+    for i in range(len(a)):
+        print(a[i])            
+        
+######################################################################
 def tras_rot():
     # MOSTRAR MATRIZ
     for i in range(len(mat)): # Filas
@@ -199,10 +262,7 @@ def tras_rot():
     elif(sentido == 'Z' or sentido == 'z'):
         trz()
     else:
-        print("DIGITO INCORRECTO")  
-    
-    
-    pass        
+        print("DIGITO INCORRECTO")         
         
 ######################################################################        
 # SI ES ROTACIÓN O TRASLACIÓN
